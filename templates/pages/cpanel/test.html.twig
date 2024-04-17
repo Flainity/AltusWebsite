@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'components/header.html.twig' with {
+        title: 'User Control Panel',
+        description: 'Control your accounts settings, profile information, characters and statistics from a single location!'
+    } %}
+    <div class="md:container mx-auto mt-10">
+        <list/>
+    </div>
+{% endblock %}

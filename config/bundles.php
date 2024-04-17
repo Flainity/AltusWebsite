@@ -13,4 +13,9 @@ return [
     Symfony\Bundle\SecurityBundle\SecurityBundle::class => ['all' => true],
     Symfony\Bundle\MonologBundle\MonologBundle::class => ['all' => true],
     Symfony\Bundle\MakerBundle\MakerBundle::class => ['dev' => true],
+    App\Bundles\AccountBundle\AccountBundle::class => ['all' => true],
+    App\Bundles\MainBundle\MainBundle::class => ['all' => true],
+    App\Bundles\ShopBundle\ShopBundle::class => ['all' => true],
+    App\Bundles\CharacterBundle\CharacterBundle::class => ['all' => true],
+    Symfony\WebpackEncoreBundle\WebpackEncoreBundle::class => ['all' => true],
 ];

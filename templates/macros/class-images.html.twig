@@ -1,0 +1,10 @@
+{% macro load_image(character_class) %}
+    {% set class_images = {
+        1: 'Fighter', 2: 'Fighter', 3: 'Fighter', 4: 'Fighter', 5: 'Fighter',
+        6: 'Cleric', 7: 'Cleric', 8: 'Cleric', 9: 'Cleric', 10: 'Cleric',
+        11: 'Archer', 12: 'Archer', 13: 'Archer', 14: 'Archer', 15: 'Archer',
+        16: 'Mage', 17: 'Mage', 18: 'Mage', 19: 'Mage', 20: 'Mage',
+        21: 'Trickster', 22: 'Trickster', 23: 'Trickster', 24: 'Trickster', 25: 'Trickster'
+    } %}
+    <img src="{{ asset('build/images/Classes/' ~ class_images[character_class] ~ '.png') }}" alt="" class="h-12 w-12 rounded-full">
+{% endmacro %}

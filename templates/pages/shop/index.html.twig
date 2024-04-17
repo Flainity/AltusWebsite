@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'components/header.html.twig' with {
+        title: 'Item Mall',
+        description: 'Control your accounts settings, profile information, characters and statistics from a single location!'
+    } %}
+
+    <div class="md:container bg-neutral-900 rounded-xl shadow-lg p-10 mx-auto my-10">
+        <div class="space-y-6">
+            <item-mall/>
+        </div>
+    </div>
+{% endblock %}

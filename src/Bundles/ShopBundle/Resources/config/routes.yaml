@@ -1,0 +1,10 @@
+frontend_controllers:
+    resource: ../../Controller/Frontend
+    type: attribute
+    prefix: /shop
+    name_prefix: shop.
+api_controllers:
+    resource: ../../Controller/Api
+    type: attribute
+    prefix: /api/shop
+    name_prefix: api_shop.

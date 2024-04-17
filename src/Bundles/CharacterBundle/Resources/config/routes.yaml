@@ -1,0 +1,10 @@
+frontend_controllers:
+    resource: ../../Controller/Frontend
+    type: attribute
+    prefix: /characters
+    name_prefix: characters.
+api_controllers:
+    resource: ../../Controller/Api
+    type: attribute
+    prefix: /api/characters
+    name_prefix: api_characters.
