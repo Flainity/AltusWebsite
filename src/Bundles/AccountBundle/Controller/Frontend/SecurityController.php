@@ -50,7 +50,7 @@ class SecurityController extends AbstractController
             $user->setIp($request->getClientIp());
 
             try {
-                $defaultAuthentication = $settingManager->getValueByKey(SettingType::DEFAULT_AUTHENTICATION->value);
+                $defaultAuthentication = $settingManager->getSettingValue(SettingType::DEFAULT_AUTHENTICATION->value);
             } catch (SettingNotFoundException $exception) {
                 $this->addFlash('error', 'An error occurred while registering your account. Please contact an administrator. Error code: REG-001');
                 return $this->redirectToRoute('security.register');

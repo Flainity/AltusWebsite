@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ 'app.title'|trans }}{% endblock %}
+
+{% block body %}
+    {% include 'components/header.html.twig' with {
+        title: 'Donate',
+        description: 'Control your accounts settings, profile information, characters and statistics from a single location!'
+    } %}
+    {{ form_start(form) }}
+    {{ form_row(form.amount) }}
+    <button type="submit" class="btn btn-primary">Donate</button>
+    {{ form_end(form) }}
+{% endblock %}

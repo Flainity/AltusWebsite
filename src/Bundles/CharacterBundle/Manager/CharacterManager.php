@@ -46,9 +46,9 @@ readonly class CharacterManager
         }
 
         try {
-            $resetMap = $this->settingManager->getValueByKey(SettingType::RESET_MAP->value);
-            $resetMapX = $this->settingManager->getValueByKey(SettingType::RESET_MAP_X->value);
-            $resetMapY = $this->settingManager->getValueByKey(SettingType::RESET_MAP_Y->value);
+            $resetMap = $this->settingManager->getSettingValue(SettingType::RESET_MAP->value);
+            $resetMapX = $this->settingManager->getSettingValue(SettingType::RESET_MAP_X->value);
+            $resetMapY = $this->settingManager->getSettingValue(SettingType::RESET_MAP_Y->value);
 
             $character->setCurrentMap($resetMap);
             $character->setCurrentMapX($resetMapX);

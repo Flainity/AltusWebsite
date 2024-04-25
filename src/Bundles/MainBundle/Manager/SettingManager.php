@@ -18,7 +18,7 @@ class SettingManager
     /**
      * @throws SettingNotFoundException
      */
-    public function getValueByKey(string $key): string
+    public function getSettingValue(string $key): string
     {
         $setting = $this->doctrine->getRepository(Setting::class)->findOneBy(['identifier' => $key]);
 
